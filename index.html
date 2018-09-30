@@ -1,22 +1,34 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>To-do list</title>
+	<title>todoist</title>
+	
+<link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto+Mono" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styletodo.css">
+
+	
 </head>
 <body>
- 
- <header>
- 	<div>TO-DO LIST</div>
+<div id="header">
+	<h1>To do list</h1>
+</div>
+<div id="add">
+	<div id=inadd>
+	<input type="text" id="input" placeholder="Enter task here...">
+	<span onclick="newElement()" class="adbtn">Add</span>
+</div>
+</div>
 
- </header>
-
-<div class="inputtask">
-	<input class="tasktext" type="text" placeholder="Enter task here...">
-<button class="taskbut">Submit</button></div>
-
-
-
+<ul id="myUL" >
+	<li>Complete this to-do list</li>
+</ul>
+<script src="todojava.js"></script>
 </body>
 </html>
+
+<!-- #05386b
+#379683
+#5cdb95
+#8ee4af
+#edf5e1 -->
