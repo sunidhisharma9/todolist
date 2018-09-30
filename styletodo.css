@@ -1,0 +1,78 @@
+ body{
+ 	background: #2F4F4F;
+ }
+
+ header div{text-align: center;
+ 	font-family: sans-serif;
+ 	font-weight: 800;
+ 	font-size: 50px;
+ 	margin-top: 30px;
+ }
+
+ header{
+ 	background-color: #8FBC8F;
+ 	position: fixed;
+ 	top:0;
+ 	left:0;
+ 	width: 100%;
+ 	height: 150px;
+ 	border-bottom-left-radius: 30px;
+ 	border-bottom-right-radius: 30px;
+ }
+
+ .inputtask{
+
+margin-left: 25%;
+margin-right: 25%;
+ position: fixed;
+ border-radius: 40px;
+ padding: 10px;
+ background: #696969;
+ width: 50%;
+ margin-top: 180px;
+ font-family: sans-serif;
+ font-stretch: expanded;
+ border-width: 100%;
+ 
+
+ }
+
+ .tasktext{
+  width: 0;
+  border: none;
+  background: none;
+  color: white;
+  float:left;
+  padding: 0;
+  transition: 0.4s;
+  line-height: 40px;
+
+
+  }
+
+  .taskbut{
+  	width:40px;
+  	height:40px;
+    padding-right: 50px;
+  	float: right;
+  	background: none;
+  	border:none;
+  	justify-content: center;
+  	display: flex;
+  	border-radius: 50%;
+  	align-items: center;
+  	text-transform: uppercase;
+  	font-size: 20px;
+  	font-family: serif;
+  	font-weight: 500;
+
+   }
+
+  /* colors #696969*/
+
+.inputtask:hover > .tasktext{
+	width: 100px;
+	padding: 0 6px;
+}
+
+  
