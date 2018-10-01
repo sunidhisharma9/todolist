@@ -1,9 +1,21 @@
+//using jquery
+// checking list out
+ $("ul").on("click","li",function(){
+$(this).toggleClass("completed");
+ 
+});
 
-//adding new element
-function newElement(){
- var item= document.getElementById("input").value
- var text= document.createTextNode( item )
- var newItem= document.createElement("li")
- newItem.appendChild(text)
- document.getElementById("myUL").appendChild(newItem)
-}
+ //clicking delete
+ $("ul").on("click","span",function(event){
+ 	$(this).parent().remove();
+   event.stopPropagation();
+ });
+
+//adding new tasks
+ $("input[type='text']").keypress(function(event){
+   if(event.which===13){
+   	var todoText=$(this).val();
+   $(this).val("");
+ $("ul").append("<li>"+ todoText +" <span>X</span></li>");
+   }
+ });
