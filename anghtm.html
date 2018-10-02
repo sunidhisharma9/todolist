@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ToDo">
+<head>
+	<meta charset="utf-8">
+	<title>To-Do</title>
+	<link rel="stylesheet" type="text/css" href="angcss.css">
+</head>
+<body>
+	<div id="header"><h1>TO-DO LIST</h1></div>
+
+<div ng-controller="todoController" id="container">
+	<form name="frm" id="frm" ng-submit="addTodo()">
+		<input id="task-inp" type="text" name="newTodo" ng-model="newTodo" placeholder="Enter task here..." required/>
+		<span><button id="ad-btn" ng-disabled="frm.$invalid">ADD</button></span>
+	</form>
+	<div id="dlb"><button id="del-btn" ng-click="clearCompleted()">DELETE</button></div>
+
+	<ul id="mylist">
+		<li id="list" ng-repeat="todo in todos">
+			<input id="check" type="checkbox" ng-model="todo.done"/>
+			<span ng-class="{'done':todo.done}">{{ todo.title}}</span>
+		</li>
+	</ul>
+
+</div>
+
+
+   <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="angjava.js"></script>
+	
+
+</body>
+</html>
